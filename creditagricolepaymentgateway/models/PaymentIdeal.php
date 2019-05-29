@@ -168,7 +168,7 @@ class PaymentIdeal extends Payment
     /**
      * Create config for iDEAL transactions
      *
-     * @param \WirecardPaymentGateway $paymentModule
+     * @param \CreditAgricolePaymentGateway $paymentModule
      * @return \Wirecard\PaymentSdk\Config\Config
      * @since 1.0.0
      */
@@ -191,7 +191,7 @@ class PaymentIdeal extends Payment
     /**
      * Create ideal transaction
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param \Cart $cart
      * @param array $values
      * @param int $orderId

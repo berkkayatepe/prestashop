@@ -36,7 +36,7 @@ use WirecardEE\Prestashop\Models\PaymentCreditCard;
 use \WirecardEE\Prestashop\Models\CreditCardVault;
 
 /**
- * @property WirecardPaymentGateway module
+ * @property CreditAgricolePaymentGateway module
  *
  * @since 1.1.0
  */
@@ -62,7 +62,7 @@ class CreditAgricolePaymentGatewayCreditCardModuleFrontController extends Module
     public function displayAjaxListStoredCards()
     {
         header('Content-Type: application/json; charset=utf8');
-        die(json_encode($this->vaultModel->getUserCards()));
+        die(json_encode($this->vaultModel->getUserCards($this->context->cart->id_address_invoice)));
     }
 
     /**
@@ -79,7 +79,7 @@ class CreditAgricolePaymentGatewayCreditCardModuleFrontController extends Module
             $this->displayAjaxListStoredCards();
         }
 
-        $this->vaultModel->addCard($maskedpan, $tokenId);
+        $this->vaultModel->addCard($maskedpan, $tokenId, $this->context->cart->id_address_invoice);
 
         $this->displayAjaxListStoredCards();
     }

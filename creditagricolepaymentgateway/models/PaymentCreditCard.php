@@ -206,7 +206,7 @@ class PaymentCreditCard extends Payment
     /**
      * Create config for credit card transactions
      *
-     * @param \WirecardPaymentGateway $paymentModule
+     * @param \CreditAgricolePaymentGateway $paymentModule
      * @return \Wirecard\PaymentSdk\Config\Config
      * @since 1.0.0
      */
@@ -257,7 +257,7 @@ class PaymentCreditCard extends Payment
     /**
      * Create request data for credit card ui
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param \Context $context
      * @return mixed
      * @since 1.0.0
@@ -276,7 +276,7 @@ class PaymentCreditCard extends Payment
     /**
      * Create creditcard transaction
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param \Cart $cart
      * @param array $values
      * @param int $orderId

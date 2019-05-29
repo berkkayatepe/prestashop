@@ -232,7 +232,7 @@ class Payment
     /**
      * Create Default Transaction
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param \Cart $cart
      * @param array $values
      * @param int $orderId
@@ -363,7 +363,7 @@ class Payment
     /**
      * Check if payment is available for specific cart content default true
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param \Cart $cart
      * @return bool
      * @since 1.0.0

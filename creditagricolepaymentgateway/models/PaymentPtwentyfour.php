@@ -163,7 +163,7 @@ class PaymentPtwentyfour extends Payment
     /**
      * Create config for Ptwentyfour transactions
      *
-     * @param \WirecardPaymentGateway $paymentModule
+     * @param \CreditAgricolePaymentGateway $paymentModule
      * @return \Wirecard\PaymentSdk\Config\Config
      * @since 1.0.0
      */
@@ -186,7 +186,7 @@ class PaymentPtwentyfour extends Payment
     /**
      * Create Ptwentyfour transaction
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param \Cart $cart
      * @param array $values
      * @param int $orderId

@@ -172,7 +172,7 @@ class PaymentUnionPayInternational extends Payment
     /**
      * Create config for UnionPayInternational transactions
      *
-     * @param \WirecardPaymentGateway $paymentModule
+     * @param \CreditAgricolePaymentGateway $paymentModule
      * @return \Wirecard\PaymentSdk\Config\Config
      * @since 1.0.0
      */
@@ -199,7 +199,7 @@ class PaymentUnionPayInternational extends Payment
     /**
      * Create request data for UnionPayInternational UI
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param \Context $context
      * @return mixed
      * @since 1.0.0
@@ -218,7 +218,7 @@ class PaymentUnionPayInternational extends Payment
     /**
      * Create UnionPayInternational transaction
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param \Cart $cart
      * @param array $values
      * @param int $orderId

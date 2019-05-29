@@ -33,7 +33,7 @@
  */
 
 /**
- * @property WirecardPaymentGateway module
+ * @property CreditAgricolePaymentGateway module
  *
  * @since 1.0.0
  */

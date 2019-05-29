@@ -69,7 +69,7 @@ class PaymentSepaCreditTransfer extends Payment
     }
 
     /**
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param \Cart $cart
      * @return bool
      */
@@ -153,7 +153,7 @@ class PaymentSepaCreditTransfer extends Payment
     /**
      * Create config for SEPA transactions
      *
-     * @param \WirecardPaymentGateway $paymentModule
+     * @param \CreditAgricolePaymentGateway $paymentModule
      * @return \Wirecard\PaymentSdk\Config\Config
      * @since 1.0.0
      */
@@ -177,7 +177,7 @@ class PaymentSepaCreditTransfer extends Payment
     /**
      * Create sepa transaction
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param \Cart $cart
      * @param array $values
      * @param int $orderId

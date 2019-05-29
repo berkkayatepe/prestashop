@@ -36,7 +36,7 @@ use WirecardEE\Prestashop\Models\PaymentCreditCard;
 use WirecardEE\Prestashop\Models\PaymentUnionPayInternational;
 
 /**
- * @property WirecardPaymentGateway module
+ * @property CreditAgricolePaymentGateway module
  *
  * @since 1.0.0
  */

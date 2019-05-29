@@ -221,7 +221,7 @@ class PaymentGuaranteedInvoiceRatepay extends Payment
     /**
      * Create config for ratepay invoice transactions
      *
-     * @param \WirecardPaymentGateway $paymentModule
+     * @param \CreditAgricolePaymentGateway $paymentModule
      * @return \Wirecard\PaymentSdk\Config\Config
      * @since 1.0.0
      */
@@ -244,7 +244,7 @@ class PaymentGuaranteedInvoiceRatepay extends Payment
     /**
      * Create Ratepay invoice transaction
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param \Cart $cart
      * @param array $values
      * @param int $orderId
@@ -330,7 +330,7 @@ class PaymentGuaranteedInvoiceRatepay extends Payment
     }
 
     /**
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param \Cart $cart
      * @return bool
      * @since 1.0.0
@@ -395,7 +395,7 @@ class PaymentGuaranteedInvoiceRatepay extends Payment
     /**
      * Check if total amount is in limit minimum and maximum amount
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param float $total
      * @return bool
      * @since 1.0.0
@@ -415,7 +415,7 @@ class PaymentGuaranteedInvoiceRatepay extends Payment
     /**
      * Validate address information (shipping, billing)
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param \Address $shipping
      * @param \Address $billing
      * @return bool
@@ -461,7 +461,7 @@ class PaymentGuaranteedInvoiceRatepay extends Payment
     /**
      * Get array with allowed countries per address type
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param string $type
      * @return array
      * @since 1.0.0
@@ -484,7 +484,7 @@ class PaymentGuaranteedInvoiceRatepay extends Payment
     /**
      * Get array with allowed currencies
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @return array
      * @since 1.0.0
      */

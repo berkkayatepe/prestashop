@@ -161,7 +161,7 @@ class PaymentSofort extends Payment
     /**
      * Create config for Sofort. transactions
      *
-     * @param \WirecardPaymentGateway $paymentModule
+     * @param \CreditAgricolePaymentGateway $paymentModule
      * @return \Wirecard\PaymentSdk\Config\Config
      * @since 1.0.0
      */
@@ -188,7 +188,7 @@ class PaymentSofort extends Payment
     /**
      * Create sofort transaction
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param \Cart $cart
      * @param array $values
      * @param int $orderId

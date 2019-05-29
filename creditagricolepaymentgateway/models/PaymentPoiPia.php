@@ -173,7 +173,7 @@ class PaymentPoiPia extends Payment
     /**
      * Create config for POI/PIA transactions
      *
-     * @param \WirecardPaymentGateway $paymentModule
+     * @param \CreditAgricolePaymentGateway $paymentModule
      * @return \Wirecard\PaymentSdk\Config\Config
      * @since 1.0.0
      */
@@ -212,7 +212,7 @@ class PaymentPoiPia extends Payment
     /**
      * Create PoiPiaTransaction
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param \Cart $cart
      * @param array $values
      * @param int $orderId

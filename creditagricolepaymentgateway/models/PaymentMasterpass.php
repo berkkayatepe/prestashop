@@ -171,7 +171,7 @@ class PaymentMasterpass extends Payment
     /**
      * Create config for Masterpass transactions
      *
-     * @param \WirecardPaymentGateway $paymentModule
+     * @param \CreditAgricolePaymentGateway $paymentModule
      * @return \Wirecard\PaymentSdk\Config\Config
      * @since 1.0.0
      */
@@ -194,7 +194,7 @@ class PaymentMasterpass extends Payment
     /**
      * Create Masterpass transaction
      *
-     * @param \WirecardPaymentGateway $module
+     * @param \CreditAgricolePaymentGateway $module
      * @param \Cart $cart
      * @param array $values
      * @param int $orderId

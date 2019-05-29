@@ -44,7 +44,7 @@ use Wirecard\PaymentSdk\Transaction\Operation;
 /**
  * Class WirecardTransactions
  *
- * @property WirecardPaymentGateway module
+ * @property CreditAgricolePaymentGateway module
  * @since 1.0.0
  */
 class WirecardTransactionsController extends ModuleAdminController

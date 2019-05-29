@@ -47,10 +47,10 @@ use WirecardEE\Prestashop\Helper\OrderManager;
 use WirecardEE\Prestashop\Helper\Logger as WirecardLogger;
 
 /**
- * Class WirecardPaymentGatewayPaymentModuleFrontController
+ * Class CreditAgricolePaymentGatewayPaymentModuleFrontController
  *
  * @extends ModuleFrontController
- * @property WirecardPaymentGateway module
+ * @property CreditAgricolePaymentGateway module
  *
  * @since 1.0.0
  */
