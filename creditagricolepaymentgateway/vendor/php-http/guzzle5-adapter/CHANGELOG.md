@@ -1,5 +1,15 @@
 # Change Log
 
+## 2.0.0 - 2019-02-05
+
+### Added
+
+- Support for HTTPlug 2.0 and PSR-18
+
+### Removed
+
+- Support for PHP <7.0
+
 ## 1.0.1 - 2017-07-11
 
 ### Fixed

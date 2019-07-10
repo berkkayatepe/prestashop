@@ -18,4 +18,5 @@ return array(
     'Codacy\\Coverage\\Util\\CodacyApiClient' => $vendorDir . '/codacy/coverage/src/Codacy/Coverage/Util/CodacyApiClient.php',
     'Codacy\\Coverage\\Util\\GitClient' => $vendorDir . '/codacy/coverage/src/Codacy/Coverage/Util/GitClient.php',
     'Codacy\\Coverage\\Util\\JsonProducer' => $vendorDir . '/codacy/coverage/src/Codacy/Coverage/Util/JsonProducer.php',
+    'JsonException' => $vendorDir . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
 );

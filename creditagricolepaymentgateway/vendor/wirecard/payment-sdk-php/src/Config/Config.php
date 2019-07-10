@@ -47,8 +47,6 @@ use Wirecard\PaymentSdk\Transaction\RatepayInvoiceTransaction;
  */
 class Config
 {
-    const VERSION_FILE = __DIR__ . '/../../VERSION';
-
     /**
      * @var string
      */
@@ -127,8 +125,18 @@ class Config
 
         $this->shopSystem = 'paymentSDK-php';
 
-        $version = $this->getVersionFromFile(self::VERSION_FILE);
+        $version = $this->getVersionFromFile(__DIR__ . '/../../VERSION');
         $this->shopSystemVersion = $version;
+    }
+
+    /**
+     * @return string
+     *
+     * @since 3.7.1
+     */
+    public function getShopSystemVersion()
+    {
+        return $this->shopSystemVersion;
     }
 
     /**
@@ -244,6 +252,28 @@ class Config
         }
 
         return array('headers' => $data);
+    }
+
+    /**
+     * Get shop information for nvp request
+     *
+     * @return array
+     *
+     * @since 3.7.1
+     */
+    public function getNvpShopInformation()
+    {
+        $data = array(
+            'shop_system_name'    => $this->shopSystem,
+            'shop_system_version' => $this->shopSystemVersion,
+        );
+
+        if ($this->pluginName && $this->pluginVersion) {
+            $data['plugin_name']    = $this->pluginName;
+            $data['plugin_version'] = $this->pluginVersion;
+        }
+
+        return $data;
     }
 
     /**
