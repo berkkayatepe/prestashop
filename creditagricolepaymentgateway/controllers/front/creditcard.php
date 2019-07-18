@@ -62,7 +62,7 @@ class CreditAgricolePaymentGatewayCreditCardModuleFrontController extends Module
     public function displayAjaxListStoredCards()
     {
         header('Content-Type: application/json; charset=utf8');
-        die(json_encode($this->vaultModel->getUserCards($this->context->cart->id_address_invoice)));
+        die(\Tools::jsonEncode($this->vaultModel->getUserCards($this->context->cart->id_address_invoice)));
     }
 
     /**

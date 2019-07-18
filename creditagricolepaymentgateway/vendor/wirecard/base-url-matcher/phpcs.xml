@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ruleset name="Wirecard Base Url Matcher">
+    <description>WirecardBase Url Matcher</description>
+    <rule ref="PSR2"/>
+    <!-- Paths to check -->
+    <file>src</file>
+</ruleset>

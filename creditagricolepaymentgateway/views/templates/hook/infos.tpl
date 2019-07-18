@@ -39,7 +39,7 @@
     <a class="btn btn-default" id="WirecardSupport" href="{$link->getAdminLink('WirecardSupport')|escape:'html':'UTF-8'}">
         {lFallback s='text_support' mod='creditagricolepaymentgateway'}
     </a>
-    <a class="btn btn-default" id="WirecardShopPluginInformation" target=_blank href="#/wiki/Terms-of-Use">
+    <a class="btn btn-default" id="WirecardShopPluginInformation" target=_blank href="https://github.com/smart-ecommerce/prestashop/wiki/Terms-of-Use">
         {lFallback s='terms_of_use' mod='creditagricolepaymentgateway'}
     </a>
 </div>

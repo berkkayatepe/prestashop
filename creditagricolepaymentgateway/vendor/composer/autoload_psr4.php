@@ -8,6 +8,8 @@ $baseDir = dirname(dirname($vendorDir));
 return array(
     'Wirecard\\PaymentSdk\\' => array($vendorDir . '/wirecard/payment-sdk-php/src'),
     'Wirecard\\IsoToPayPal\\' => array($vendorDir . '/wirecard/iso-paypal-converter/src'),
+    'Wirecard\\Converter\\' => array($vendorDir . '/wirecard/io-converter/src'),
+    'Wirecard\\BaseUrlMatcher\\' => array($vendorDir . '/wirecard/base-url-matcher/src'),
     'WirecardEE\\Prestashop\\Models\\' => array($baseDir . '/creditagricolepaymentgateway/models'),
     'WirecardEE\\Prestashop\\Helper\\' => array($baseDir . '/creditagricolepaymentgateway/helper'),
     'WirecardEE\\Prestashop\\Controllers\\' => array($baseDir . '/creditagricolepaymentgateway/controllers'),

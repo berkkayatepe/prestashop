@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit750d85c46b0fdab062b97431dd41bfbc
+class ComposerStaticInitcb60ac28be65e42e66a33e9c9627bb67
 {
     public static $files = array (
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
@@ -21,6 +21,8 @@ class ComposerStaticInit750d85c46b0fdab062b97431dd41bfbc
         array (
             'Wirecard\\PaymentSdk\\' => 20,
             'Wirecard\\IsoToPayPal\\' => 21,
+            'Wirecard\\Converter\\' => 19,
+            'Wirecard\\BaseUrlMatcher\\' => 24,
             'WirecardEE\\Prestashop\\Models\\' => 29,
             'WirecardEE\\Prestashop\\Helper\\' => 29,
             'WirecardEE\\Prestashop\\Controllers\\' => 34,
@@ -85,6 +87,14 @@ class ComposerStaticInit750d85c46b0fdab062b97431dd41bfbc
         'Wirecard\\IsoToPayPal\\' => 
         array (
             0 => __DIR__ . '/..' . '/wirecard/iso-paypal-converter/src',
+        ),
+        'Wirecard\\Converter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wirecard/io-converter/src',
+        ),
+        'Wirecard\\BaseUrlMatcher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wirecard/base-url-matcher/src',
         ),
         'WirecardEE\\Prestashop\\Models\\' => 
         array (
@@ -237,9 +247,9 @@ class ComposerStaticInit750d85c46b0fdab062b97431dd41bfbc
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit750d85c46b0fdab062b97431dd41bfbc::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit750d85c46b0fdab062b97431dd41bfbc::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit750d85c46b0fdab062b97431dd41bfbc::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitcb60ac28be65e42e66a33e9c9627bb67::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitcb60ac28be65e42e66a33e9c9627bb67::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitcb60ac28be65e42e66a33e9c9627bb67::$classMap;
 
         }, null, ClassLoader::class);
     }
